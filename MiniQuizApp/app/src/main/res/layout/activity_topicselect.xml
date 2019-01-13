@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="20dp"
+    tools:context="com.example.evian.a4.TopicSelect">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBaseline="@id/logout"
+        android:textSize="18sp"
+        android:text="@string/welcome"
+        tools:ignore="RelativeOverlap"
+        />
+    <TextView
+        android:id="@+id/displayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/welcome"
+        android:layout_alignBaseline="@+id/logout"
+        android:textSize="18sp"
+        tools:ignore="RelativeOverlap"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/logout"
+        tools:ignore="RelativeOverlap"
+        android:onClick="logout"
+        android:textAllCaps="false"
+        />
+
+    <TextView
+        android:id="@+id/topicTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logout"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:text="@string/topic"/>
+
+    <TextView
+        android:id="@+id/numberOfQuestionsTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/topicTitle"
+        android:layout_toEndOf="@id/topicTitle"
+        android:textSize="20sp"
+        android:text="@string/numberOfQuestions"/>
+
+    <TextView
+        android:id="@+id/topicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topicTitle"
+        android:layout_marginTop="10dp"
+        android:text="@string/topicName"
+        />
+
+    <Spinner
+        android:id="@+id/numberOfQuestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topicTitle"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@id/numberOfQuestionsTitle">
+    </Spinner>
+
+    <Button
+        android:id="@+id/load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topicTitle"
+        android:layout_alignParentEnd="true"
+        android:text="@string/load"
+        android:onClick="loadQuestions"
+        android:textAllCaps="false"
+        />
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="20dp"
+    tools:context="com.example.evian.a4.LoadQuestion3">
+
+    <TextView
+        android:id="@+id/nameSemi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBaseline="@id/logout"
+        android:textSize="18sp"
+        android:text="@string/nameSemi"
+        tools:ignore="RelativeOverlap"
+        />
+
+    <TextView
+        android:id="@+id/displayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/nameSemi"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/logout"
+        tools:ignore="RelativeOverlap"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/logout"
+        tools:ignore="RelativeOverlap"
+        android:onClick="logout"
+        android:textAllCaps="false"
+        />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameSemi"
+        android:layout_marginTop="40dp"
+        android:textSize="18sp"
+        android:text="@string/question3"/>
+
+    <ImageView
+        android:id="@+id/question3Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/question"
+        android:layout_marginTop="20dp"
+        android:maxHeight="80dp"
+        android:maxWidth="160dp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/image3"
+        android:contentDescription="@string/flag3"
+        />
+
+    <RadioGroup
+        android:id="@+id/question1Options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/question3Image">
+
+
+        <RadioButton
+            android:id="@+id/radioNetherlands"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/netherlands"
+            android:onClick="onRadioButtonClicked"
+            />
+
+        <RadioButton
+            android:id="@+id/radioTaiwan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/taiwan"
+            android:onClick="onRadioButtonClicked"
+            />
+
+        <RadioButton
+            android:id="@+id/radioChina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/china"
+            android:onClick="onRadioButtonClicked"
+            />
+
+        <RadioButton
+            android:id="@+id/radioSlovakia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/slovakia"
+            android:onClick="onRadioButtonClicked"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/previous"
+        android:textAllCaps="false"
+        android:onClick="goPreviousPage"/>
+
+    <TextView
+        android:id="@+id/index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/next"
+        tools:ignore="RelativeOverlap"
+        android:onClick="goNextPage"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

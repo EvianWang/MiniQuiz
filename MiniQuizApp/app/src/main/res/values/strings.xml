@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">A4</string>
+    <string name="Name">Name</string>
+    <string name="next">Next</string>
+    <string name="copyright">Copyright @y897wang</string>
+    <string name="logout">"Logout"</string>
+    <string name="topic">Topic</string>
+    <string name="numberOfQuestions"># of Questions</string>
+    <string name="topicName">World Flag</string>
+    <string name="nameSemi">"Name: "</string>
+    <string name="load">Load</string>
+    <string name="welcome">"Welcome "</string>
+    <string name="question1">Q1:Select the country that has this flag</string>
+    <string name="flag1">Canadian flag</string>
+    <string name="canada">Canada</string>
+    <string name="taiwan">Taiwan</string>
+    <string name="china">China</string>
+    <string name="peru">Peru</string>
+    <string name="previous">Previous</string>
+    <string name="topicSelect">"Topic Selection"</string>
+    <string name="question2">Q2:Select the countries that have these flags</string>
+    <string name="flag2">Brazil flag and Argentina flag</string>
+    <string name="question3">Q3:Select the country that has this flag</string>
+    <string name="flag3">China flag</string>
+    <string name="question4">Q4:Select the country that has this flag</string>
+    <string name="flag4">South Korea flag</string>
+    <string name="question5">Q5:Select the countries that have these flags</string>
+    <string name="flag5">South Africa flag and UK flag</string>
+    <string name="netherlands">Netherlands</string>
+    <string name="slovakia">Slovakia</string>
+    <string name="india">India</string>
+    <string name="brazil">Brazil</string>
+    <string name="southkorea">South Korea</string>
+    <string name="southafrica">South Africa</string>
+    <string name="uk">United Kingdom</string>
+    <string name="ivorycoast">Ivory Coast</string>
+    <string name="argentina">Argentina</string>
+    <string name="luxembourg">Luxembourg</string>
+
+
+
+</resources>
